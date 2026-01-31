@@ -1,7 +1,23 @@
-function calc() {
+function calc(operation) {
     var num1 = parseFloat(document.getElementById("num1").value);
     var num2 = parseFloat(document.getElementById("num2").value);
     
-    var output = num1 + num2;
+    var output;
+    switch(operation) {
+        case '+':
+            output = num1 + num2;
+            break;
+        case '-':
+            output = num1 - num2;
+            break;
+        case '*':
+            output = num1 * num2;
+            break;
+        case '/':
+            output = num1 / num2;
+            break;
+        default:
+            output = 0;
+    }
     document.getElementById("output").value = output;
 }
