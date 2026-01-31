@@ -8,8 +8,9 @@ input {
     padding: 8px;
     font-size: 1.2em;
     margin: 15px 70px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    text-align: right;
+    text-align: left;
 }   
 
 input[type=number]:focus {
@@ -45,6 +46,11 @@ button:hover {
     margin: auto;
     padding: 40px;
     border-radius: 4px;
+}
+
+.resultado:focus {
+    outline: none;
+    cursor: default;
 }
 
 .calc {

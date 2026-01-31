@@ -20,4 +20,8 @@ function calc(operation) {
             output = 0;
     }
     document.getElementById("output").value = output;
+
+    var newHistory = "<div>" + num1 + " " + operation + " " + num2 + " = " + output + "</div>";
+    var history = document.getElementById("history");
+    history.innerHTML = newHistory + history.innerHTML;
 }
